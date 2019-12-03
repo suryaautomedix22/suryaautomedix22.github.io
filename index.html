@@ -58,9 +58,20 @@
     </section>
     
     
-
-    <div class="div" style="height:600px; background:#ff0000">
+    <section class="skill_section" id="skill_pin">
+        <span class="black_bg"></span>
+        <div class="main_wrapper zindex_6">
+            <div class="container-fluid">
+                <div class="row">
+                </div>
+            </div>
+        </div>    
+    </section>
+    <div class="skill" style="height:600px; background:#ff0000">
     https://codepen.io/mikeK/pen/oOmyOZ
+
+
+    https://revolution.themepunch.com/
     </div>
 
     <!-- ======================= Hero Section End ======================= -->
@@ -157,28 +168,20 @@
 
     .from($('.hero_img'), 0.3, {scale: [2, -2], delay: 0.2})
     .to($('.hero_img'), 0.3, {x: 350,   delay: 0.5})
-
     .to($('.hero_content h1'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.2})
     .to($('.hero_content h1 span'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.2})
-    .to($('.hero_content p'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.2})
-
-
-    
+    .to($('.hero_content p'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.2})   
     .to($('.hero_content'), 0.3, {scale: [0, -0], autoAlpha: 0, ease: Power1.easeOut, delay: 0.4})
     .to($('.hero_img'), 0.3, {x: -380,  delay: 0.4})
     .to($('.black_bg'), 0.7, {autoAlpha: 0, ease: Power1.easeOut, delay: 0.4})
-    .to($('.about_content'), 0.3, {scale: [1, -1], autoAlpha: 1, ease: Power1.easeOut, delay: 0.4})
-    // .to($('.about_content h1'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.4})
-    // .to($('.about_content h1 span'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.4})
-    // .to($('.about_content p'), 0.3, {y: 15, autoAlpha: 1, ease: Power1.easeOut, delay: 0.4})
-
-    // .to($('.hero_section'), 2.3, {autoAlpha: 0, ease: Power1.easeOut, delay: 1.4})
+    .to($('.about_content'), 0.3, {scale: [1, -1], autoAlpha: 1, ease: Power1.easeOut, delay: 0.4})   
+    .to($('.hero_bg1'), 2.3, {y: 880,  delay: 3.8})
 
 
     new ScrollMagic.Scene({
       triggerElement: "#hero_pin",
       triggerHook: 0,
-      duration: "500%"
+      duration: "300%"
     })
 
     .setPin("#hero_pin")
@@ -186,6 +189,25 @@
     .addTo(controller);
 
    
+
+   // hero section start
+
+   var skill_var = new TimelineMax();
+   skill_var
+
+   .to($('.black_bg'), 0.3, {autoAlpha: 1, ease: Power1.easeOut, delay: 0.2})
+
+
+
+    new ScrollMagic.Scene({
+      triggerElement: "#skill_pin",
+      triggerHook: 0,
+      duration: "400%"
+    })
+
+    .setPin("#skill_pin")
+    .setTween(skill_var)
+    .addTo(controller);
 
 
 

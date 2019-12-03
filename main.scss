@@ -147,8 +147,7 @@
 
     .hero_section{
         height: 100vh;
-        // background: #000000;
-        // background: rgba(191, 191, 191, 0.28);
+        overflow: hidden;
         .black_bg{
             position: absolute;
             background: #000000;
@@ -170,7 +169,7 @@
                         top: 50%;
                         left: -350px;
                         transform: translateY(-50%);
-                        overflow: hidden;
+                        // overflow: hidden;
                         z-index: 7;
                         img.hero_bg{
                             width: 100%;
@@ -253,6 +252,31 @@
                             line-height: 36px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .skill_section{
+        background: #bfebf3;
+        height: 100vh;
+        .black_bg{
+            position: absolute;
+            background: #000000;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            height: 100vh;
+        }
+        .main_wrapper{
+            height: 100%;
+            .container-fluid{
+                height: 100%;
+                .row{
+                    height: 100%;
+                   
                 }
             }
         }

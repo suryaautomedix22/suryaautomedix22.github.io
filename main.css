@@ -93,8 +93,7 @@ a, input {
   100% {
     top: 110%; } }
 .hero_section {
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
   .hero_section .black_bg {
     position: absolute;
     background: #000000;
@@ -168,25 +167,6 @@ a, input {
             font-size: 22px;
             line-height: 36px; }
 
-.skill_section {
-  background: #bfebf3;
-  height: 100vh; }
-  .skill_section .black_bg {
-    position: absolute;
-    background: #000000;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    height: 100vh; }
-  .skill_section .main_wrapper {
-    height: 100%; }
-    .skill_section .main_wrapper .container-fluid {
-      height: 100%; }
-      .skill_section .main_wrapper .container-fluid .row {
-        height: 100%; }
-
 .mydiv {
   z-index: 3;
   width: 100%;
@@ -248,4 +228,4 @@ a, input {
 /*------------very small mobiles potrait only------------*/
 /* ================= */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
